@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Marriage and Divorce Rates in The USA</title>
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+    <!-- d3 JavaScript -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  </head>
+  <body>
+    <!-- The div that holds our map -->
+    <!-- <div id="map"></div> -->
+
+    <!-- The div that holds Line Chart -->
+    <div>
+      <select id="selDataset" onchange="optionChanged(this.value)"></select>
+      <div id="line"></div>
+    </div>
+
+    <!-- Leaflet JavaScript -->
+    <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- API key -->
+    <script type="text/javascript" src="static/js/config.js"></script>
+    <!-- Our JavaScript -->
+    <!-- <script type="text/javascript" src="static/js/map.js"></script> -->
+    <script type="text/javascript" src="static/js/line.js"></script>
+    <div class="col col-12 col-md-8 divbdy">
+      <br />
+      <h1>Summary: Latitude vs. X</h1>
+      <p>
+        The purpose of this project was to anaylze how weather changes as it
+        gets closer to the equator. To accomplish this anaylsis, we first pulled
+        data from the OpenWeatherMap API to assemble a dataset on over 500
+        cities.
+      </p>
+      <p>
+        After assembling the dataset, we used Matplotlib to plot various aspects
+        of the weather vs. latitude. Factors we looked at included: temperature,
+        cloudiness, windspeed and humidity. This site provides source data and
+        visualizations created apart of the anaylsis, as well as an explanations
+        and descriptions of any trends and correlations witnessed.
+      </p>
+      <hr />
+    </div>
+  </body>
+</html>
