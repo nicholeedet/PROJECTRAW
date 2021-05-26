@@ -1,4 +1,4 @@
-// Belly Button Biodiversity by Elvis Selimaj, GWU BootCamp 
+
 
 //Function to create the dropdown menu
 const populateDropdown = (names) => {
